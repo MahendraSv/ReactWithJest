@@ -1,6 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
 
+import Todos from './todos';
+
 render(
-    <div>Welcome to React!!</div>, document.getElementById('app')
+    <Todos />, 
+    document.getElementById('app')
 );
