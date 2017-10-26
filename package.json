@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "webpack -w",
-    "start": "live-server --port=8081",
+    "start": "react-scripts start",
     "test": "jest"
   },
   "keywords": [],
