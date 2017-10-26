@@ -19,7 +19,7 @@ export default class AddTodo extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="add-todo">
                 <input type="text" onChange={this.inputChange} />
                 <button onClick={this.addTodo}>
                     Add Todo

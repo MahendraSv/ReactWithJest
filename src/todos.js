@@ -8,7 +8,7 @@ import AddTodo from './add-todo';
 export default class Todos extends React.Component {
     state = {
         todos: [
-            {id: shortid.generate(), name: 'Learning ReactJS', done: false},
+            {id: shortid.generate(), name: 'Learning ReactJS', done: true},
             {id: shortid.generate(), name: 'Practicing ReactJS', done: false},
             {id: shortid.generate(), name: 'Working with ReactJS', done: false},
         ]

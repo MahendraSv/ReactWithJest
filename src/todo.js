@@ -11,10 +11,12 @@ export default class Todo extends React.Component {
     }
 
     render() {
+        const className = this.props.todo.done ? 'done-todo' : '';
+
         return (
-            <div style={{marginBottom:'5px'}}>
-                <input type="checkbox" style={{marginRight:'10px'}} onClick={this.toggleDone} />
-                {this.props.todo.name} &nbsp; &nbsp; 
+            <div className={`todo ${className} todo-${this.props.todo.id}`}>
+                <input type="checkbox" style={{marginRight:'10px'}} onChange={this.toggleDone} checked={this.props.todo.done} />
+                {this.props.todo.name} &nbsp; &nbsp;
                 <span className="glyphicon glyphicon-remove text-danger" onClick={this.deleteTodo}></span>
             </div>
         );
